@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subte Línea H - Horarios</title>
+    <link rel="stylesheet" href="transporte.css">
+    <style>
+        .tabla-horarios {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .tabla-horarios th, .tabla-horarios td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .tabla-horarios th {
+            background-color: var(--color-marca);
+            color: #000;
+        }
+        .tabla-horarios tr:hover {
+            background-color: #f1f1f1;
+        }
+        .nota-horarios {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-transporte">
+        <div class="logo">Línea H</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="recorrido.html">Recorrido</a></li>
+                <li><a href="horarios.html" class="activo">Horarios</a></li>
+                <li><a href="accesibilidad.html">Accesibilidad</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Cronograma de Servicio</h1>
+        <p>Conocé los horarios de apertura y cierre de nuestras cabeceras. La frecuencia promedio es de 3 a 5 minutos en hora pico.</p>
+        
+        <table class="tabla-horarios">
+            <thead>
+                <tr>
+                    <th>Día de la semana</th>
+                    <th>Primer tren (Ambas cabeceras)</th>
+                    <th>Último tren (Fac. de Derecho)</th>
+                    <th>Último tren (Hospitales)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes a Viernes</td>
+                    <td>05:30 hs</td>
+                    <td>23:30 hs</td>
+                    <td>23:30 hs</td>
+                </tr>
+                <tr>
+                    <td>Sábados</td>
+                    <td>06:00 hs</td>
+                    <td>23:59 hs</td>
+                    <td>23:59 hs</td>
+                </tr>
+                <tr>
+                    <td>Domingos y Feriados</td>
+                    <td>08:00 hs</td>
+                    <td>22:30 hs</td>
+                    <td>22:30 hs</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="nota-horarios">* Los horarios son estimativos y pueden sufrir modificaciones por cuestiones operativas.</p>
+    </main>
+
+    <footer>
+        <p>© 2026 Red de Subtes - Desarrollo por Kevin Cazon</p>
+    </footer>
+</body>
+</html>
